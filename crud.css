@@ -1,14 +1,33 @@
-.container {
-    display: flex;
-    justify-content: center;
-    height: 100vh;
-    background-color: rgb(2,17,30);
+
+
+html{
+    background-color: black;
 }
 
-.form_container {
-    margin-top:20px;
-    width: 40vw;
-    border-radius: 10px;
-    height: 80vh;
-    
+.nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 5rem;
+    background-color: black;
+    color: aliceblue;
+    font-family: sans-serif;
+}
+
+.logo-ul{
+    display: flex;  
+    align-items: center;
+    gap: 2rem;
+}
+
+.logo-ul img{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+
+.nav-link{
+    display: flex;
+    gap: 6rem
 }
