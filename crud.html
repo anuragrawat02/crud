@@ -20,14 +20,37 @@
       </ul>
     </nav>
   </header>
-  <body>
+  <body onload="readAll()">
     <div class="container">
       <div class="form-container">
-        <form action="" class="formclass">
+        <form class="formclass">
           <input type="text" class="name" placeholder="anurag" />
-          <input type="email" class="email" />
+          <input
+            type="email"
+            class="email"
+            placeholder="anuragrawat950@gmail.com"
+          />
+          <button>Create</button>
         </form>
+        <form class="updateform">
+          <input type="text" class="uname" />
+          <input type="email" class="uemail" />
+          <button>Update</button>
+        </form>
+        <div class="add_div">
+          <button onclick="create()">Add+</button>
+        </div>
+
+        <table>
+          <thead>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Action</th>
+          </thead>
+          <tbody class="data_table"></tbody>
+        </table>
       </div>
     </div>
+    <script src="/crud.js"></script>
   </body>
 </html>
